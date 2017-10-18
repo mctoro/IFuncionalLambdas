@@ -6,6 +6,9 @@
 package com.cice.main;
 
 import com.cice.interfaces.Ifuncional01;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
 
 /**
  *
@@ -42,31 +45,54 @@ public class Main {
         // (.....) ** Funcionalidad del metodo
         
         
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        List<String> listaNombres = new ArrayList<>();
+        listaNombres.add("Miguel");        
+        listaNombres.add("Jose");        
+        listaNombres.add("Belen");        
+        listaNombres.add("Alberto");        
+        listaNombres.add("Ricardo");        
+        listaNombres.add("Raul");        
+        listaNombres.add("Luis");        
+        listaNombres.add("Angel");        
+        listaNombres.add("Sergio");        
+        
+        
+        ordenar(listaNombres);
+        
+        Ifuncional02 interfaz = (a) -> ();
+        
+            
+        }
+        public static void ordenar(List<String> lista){
+            
+            PriorityQueue<String> cola = new PriorityQueue<>(lista);
+            do {                
+                System.out.println("nombre: " + cola.poll());
+                
+            } while (cola.size()> 0);
+        /*
+        Necesita una variable auxiliar de tipo String
+        String aux1="";
+        String aux2="";
+        for(String nombre : listado){
+        
+        if(!aux1.equals("")){
+            aux1 = nombre;
+        }
+         
+        aux2 = nombre;
+        
+        
+        }
         
         
         
+        */
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
     }
     
 }
